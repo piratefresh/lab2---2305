@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">The Band</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Genres
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">HipHop</a>
+              <a class="dropdown-item" href="#">Rock</a>
+              <a class="dropdown-item" href="#">Pop</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+            Login
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="title-container">
+      <h1>The Band</h1>
+    </div>
+
+    <div class="container wrapper d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col bandNav">
+          <div id="member1" class="shadow members">
+            <a
+              data-toggle="collapse"
+              href="#member1Info"
+              aria-expanded="false"
+              aria-controls="#member1Info"
+            >
+              <img src="images/andrew.jpg" alt="Andrew Singer" />
+              <h2>Andrew</h2>
+            </a>
+            <div class="collapse multi-collapse info" id="member1Info">
+              <p>Guitarist</p>
+              <p>Member since 1988</p>
+            </div>
+          </div>
+          <div id="member2" class="shadow members">
+            <a
+              data-toggle="collapse"
+              href="#member2Info"
+              aria-expanded="false"
+              aria-controls="#member2Info"
+            >
+              <img src="images/jack.jpg" alt="Melaine Singer" />
+              <h2>Melaine</h2>
+            </a>
+            <div class="collapse multi-collapse info" id="member2Info">
+              <p>Singer</p>
+              <p>Member since 1988</p>
+            </div>
+          </div>
+          <div id="member3" class="shadow members">
+            <a
+              data-toggle="collapse"
+              href="#member3Info"
+              aria-expanded="false"
+              aria-controls="#member3Info"
+            >
+              <img src="images/melanie.jpg" alt="Jack Singer" />
+              <h2>Jack</h2>
+            </a>
+            <div class="collapse multi-collapse info" id="member3Info">
+              <p>Guitarist</p>
+              <p>Member since 1988</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="albumGrid shadow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media shadow">
+      <img class="mr-3" src="..." alt="Generic placeholder image" />
+      <div class="media-body">
+        <h5 class="mt-0">Media heading</h5>
+        <p class="media-desc">
+          Click on album cover to get more information about the album
+        </p>
+      </div>
+    </div>
+
+    <footer class="container py-5 bg-light">
+      <p>band</p>
+      <p>2019</p>
+    </footer>
+
+    <div id="welcome" class="welcome_overlay"><p>Welcome Back</p></div>
+
+    <script src="grid.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
